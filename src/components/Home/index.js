@@ -18,7 +18,7 @@ class Home extends Component {
     const fetchData = await response.json()
     const updatedData = fetchData.teams.map(eachData => ({
       name: eachData.name,
-      imageUrl: eachData.team_image_url,
+      teamImageUrl: eachData.team_image_url,
       id: eachData.id,
     }))
     this.setState({teamsData: updatedData, isLoading: false})
